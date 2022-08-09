@@ -1,0 +1,168 @@
+:root {
+    --yellow: #FFC222;
+    --orange: #C88A12;
+    --gray: #303841;
+    --red: #be3144;
+    --blue: #45567d;
+    --white: #f0f0f0;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* Navbar */
+#nav-container {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--red);
+}
+#navbar {
+    float: right;
+    overflow: hidden;
+    display: flex;
+}
+#navbar a {
+    color: var(--white);
+    font-size: 30px;
+    padding: 18px 25px;
+    text-align: center;
+}
+#navbar a:hover {
+    background-color: var(--blue);
+}
+@media (max-width: 700px){
+    #navbar {
+        display: grid;
+        width: 100%;
+    }
+    #navbar a {
+        text-align: center;
+    }
+}
+/* Shifting the rest of the page down under the navbar */
+#page {
+    padding-top: 55px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#welcome-section h1 {
+    font-size: 55px;
+    color: var(--white);
+}
+#welcome-section p {
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--red);
+}
+
+/* About Section */
+#About {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--orange);
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#prof-pic {
+    max-width: 50vh;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px;
+}
+#About p {
+    font-size: 5vh;
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--blue);
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-title {
+    color: white;
+    font-size: 43px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+}
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 10px 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+#projects div a img {
+    width: 300px;
+    border: 5px solid black;
+}
+#projects div a h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+#projects div a h1:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+.project-page {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 50vh;
+    color: var(--white);
+}
+#contact h1 {
+    font-size: 10vh;
+}
+#contact h5 {
+    font-size: 3vh;
+    padding-top: 20px;
+}
+.contact-links {
+    display: block;
+    padding-top: 20px;
+}
+#profile-link {
+    margin-right: 10px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}
